@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - IMC</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section class="tela-calc">
+            <div class="titulo">
+                <h1>Calculadora - IMC</h1>
+            </div>
+            <div class="alt-pes">
+                <label for="txtalt">Altura:</label>
+                <input type="number" name="txtalt" id="txtalt" placeholder="Escreva a Altura em Metros (m)">
+            </div>
+                
+            <div class="alt-pes">
+                <label for="txtpeso">Peso:</label>
+                <input type="number" name="txtpeso" id="txtpeso" placeholder="Escreva o Peso em Quilogramas (kg)">
+            </div>
+                
+            <div class="botoes">
+                <input type="button" class="calc" value="CALCULAR" onclick="calcular()">
+                <input type="button" class="limp" value="LIMPAR" onclick="limpar()">
+
+            </div>
+            <div class="result" id="res">
+            </div>
+        </section>
+    </main>
+
+    
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
