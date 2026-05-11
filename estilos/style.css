@@ -1,11 +1,15 @@
- /* *{
+ *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}*/
+}
+
+body{
+    background-image: linear-gradient(to top, #003049, #CBE2FE);
+}
 
 main{
-    background-color: rgba(100, 148, 237, 0.377);
+
     height: 100vh;
     width: 100vw;
     display: flex;

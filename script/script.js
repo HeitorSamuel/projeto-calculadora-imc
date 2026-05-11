@@ -1,5 +1,3 @@
-const { FLOAT } = require("sequelize")
-
 function calcular(){
     var txtalt = document.getElementById('txtalt')
     var txtpeso = document.getElementById('txtpeso')
