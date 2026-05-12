@@ -9,7 +9,6 @@ body{
 }
 
 main{
-
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -22,10 +21,11 @@ section.tela-calc{
     background-color: #003049;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 680px;
-    width: 800px;
+    gap: 70px;
+    height: 600px;
+    width: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
 }
@@ -36,46 +36,55 @@ div.titulo{
     align-items: center;
     height: 50px;
     width: 100%;
-    font-size: 1.8em;
+    font-size: 22px;
     color: #fdf0d5;
 }
 
 div.alt-pes{
     display: flex;
     flex-flow: column nowrap;
-    width: 550px;
+    width: 450px;
     height: 50px;
     color: #fdf0d5;
+    justify-content: center;
 
 }
 
-
-
-div.alt-pes > input{
-    padding: 15px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 8px;
+div.input-medidas{
+    display: flex;
+    gap: 10px;
     background-color: #669bbc;
-    color: #fdf0d5;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 5px;
 }
 
-div.alt-pes > input::placeholder{
+div.input-medidas > input{
+    width: 400px;
+    background-color: transparent;
+    border: none;
+    color: #fdf0d5;
+    
+}
+
+div.input-medidas > input::placeholder{
     color: white;
 }
 
-div.alt-pes > input::-webkit-outer-spin-button, div.alt-pes > input::-webkit-inner-spin-button {
+div.input-medidas > input::-webkit-outer-spin-button, div.input-medidas > input::-webkit-inner-spin-button {
     appearance: none;
 }
 
-div.alt-pes > input:focus{
+div.input-medidas > input:focus{
     outline: none;
 }
 
 div.botoes{
     display: flex;
     justify-content: space-between;
-    width: 550px;
+    width: 450px;
+    gap: 10px;
 }
 
 div.botoes > input{
@@ -121,8 +130,8 @@ div.botoes > input:hover{
 div#res{
     display: flex;
     background-color: #669bbc;
-    width: 550px;
-    height: 150px;
+    width: 450px;
+    height: 100px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;

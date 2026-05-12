@@ -11,7 +11,6 @@ function calcular(){
         }else{
             var res = document.getElementById('res')
             document.getElementById('tela-resultado').classList.remove('ocultar-res')
-            
             var imc = peso/(altura**2)
             if (imc < 18.5){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, você está Abaixo do Peso!</p>`
