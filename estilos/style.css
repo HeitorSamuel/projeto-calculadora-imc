@@ -27,6 +27,7 @@ section.tela-calc{
     height: 680px;
     width: 800px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
 }
 
 div.titulo{
@@ -45,15 +46,31 @@ div.alt-pes{
     width: 550px;
     height: 50px;
     color: #fdf0d5;
+
 }
+
+
 
 div.alt-pes > input{
     padding: 15px;
     margin-top: 5px;
     border: none;
     border-radius: 8px;
+    background-color: #669bbc;
+    color: #fdf0d5;
 }
 
+div.alt-pes > input::placeholder{
+    color: white;
+}
+
+div.alt-pes > input::-webkit-outer-spin-button, div.alt-pes > input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+div.alt-pes > input:focus{
+    outline: none;
+}
 
 div.botoes{
     display: flex;
@@ -77,6 +94,7 @@ div.botoes > input.calc{
 
 div.botoes > input.calc:hover{
     background-color: #c1121f;
+    color: white;
 }
 
 
@@ -91,6 +109,7 @@ div.botoes > input.limp{
 
 div.botoes > input.limp:hover{
     background-color: #8AD2FF;
+    color: white;
     
 }
 
@@ -99,7 +118,7 @@ div.botoes > input:hover{
 }
 
 
-div.result{
+div#res{
     display: flex;
     background-color: #669bbc;
     width: 550px;
@@ -108,4 +127,8 @@ div.result{
     justify-content: center;
     align-items: center;
     color: #fdf0d5;
+}
+
+div.ocultar-res{
+    display: none;
 }
