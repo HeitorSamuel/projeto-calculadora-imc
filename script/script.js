@@ -14,16 +14,21 @@ function calcular(){
             var imc = peso/(altura**2)
             if (imc < 18.5){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, você está Abaixo do Peso!</p>`
+                res.style.color = '#780000'
             }else if (imc >= 18.5 && imc <= 24.9){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, o seu Peso está Normal!</p>`
             }else if (imc >= 25.0 && imc <= 29.9){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, você está com Sobrepeso!</p>`
+                res.style.color = '#780000'
             }else if (imc >= 30.0 && imc <= 34.9){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, você está com Obesidade de Grau I!</p>`
+                res.style.color = '#780000'
             }else if (imc >= 35.0 && imc <= 39.9){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, você com Obesidade de Grau II!</p>`
+                res.style.color = '#780000'
             }else if (imc >= 40.0){
                 res.innerHTML = `<p>O seu IMC é ${imc.toFixed(2)}, você com Obesidade de Grau III!</p>`
+                res.style.color = '#780000'
             }
             
         }

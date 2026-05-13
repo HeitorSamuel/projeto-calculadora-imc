@@ -23,8 +23,8 @@ section.tela-calc{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 70px;
-    height: 600px;
+    gap: 65px;
+    padding: 50px;
     width: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
@@ -34,19 +34,23 @@ div.titulo{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
     width: 100%;
-    font-size: 22px;
     color: #fdf0d5;
+    font-weight: bold;
+}
+
+div.titulo > h1{
+    font-size: 2.5rem;
 }
 
 div.alt-pes{
     display: flex;
     flex-flow: column nowrap;
     width: 450px;
-    height: 50px;
+    height: 45px;
     color: #fdf0d5;
     justify-content: center;
+    font-size: 1.1rem;
 
 }
 
@@ -58,14 +62,15 @@ div.input-medidas{
     padding: 15px;
     border-radius: 8px;
     margin-top: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 div.input-medidas > input{
-    width: 400px;
+    flex: 1;
     background-color: transparent;
     border: none;
     color: #fdf0d5;
-    
+    font-size: 1rem;
 }
 
 div.input-medidas > input::placeholder{
@@ -90,6 +95,7 @@ div.botoes{
 div.botoes > input{
     padding: 20px;
     width: 270px;
+    font-size: 1rem;
 }
 
 div.botoes > input.calc{
@@ -97,6 +103,7 @@ div.botoes > input.calc{
     color: #fdf0d5;
     border: none;
     border-radius: 8px;
+    font-weight: bold;
     transition: color 0.8s, background-color 0.8s, box-shadow 0.8s;
     box-shadow: inset 0px 0px 5px black;
 }
@@ -108,16 +115,17 @@ div.botoes > input.calc:hover{
 
 
 div.botoes > input.limp{
-    background-color: #669bbc;
+    background-color: #4F6D7A;
     color: #fdf0d5;
     border: none;
     border-radius: 8px;
+    font-weight: bold;
     box-shadow: inset 0px 0px 5px black;
     transition: color 0.8s, background-color 0.8s, box-shadow 0.8s;
 }
 
 div.botoes > input.limp:hover{
-    background-color: #8AD2FF;
+    background-color: #6C93A8;
     color: white;
     
 }
@@ -136,6 +144,7 @@ div#res{
     justify-content: center;
     align-items: center;
     color: #fdf0d5;
+    font-size: 1.1rem;
 }
 
 div.ocultar-res{
