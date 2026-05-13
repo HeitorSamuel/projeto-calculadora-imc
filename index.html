@@ -7,33 +7,74 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <main>
-        <section class="tela-calc">
-            <div class="titulo">
-                <h1>Calculadora - IMC</h1>
-            </div>
-            <div class="alt-pes">
-                <label for="txtalt">Altura:</label>
-                <div class="input-medidas"><input type="number" name="txtalt" id="txtalt" placeholder="Escreva a Altura em Metros (m)"><span>m</span></div>
-            </div>
-                
-            <div class="alt-pes">
-                <label for="txtpeso">Peso:</label>
-                <div class="input-medidas"><input type="number" name="txtpeso" id="txtpeso" placeholder="Escreva o Peso em Quilogramas (kg)"><span>Kg</span></div>
-            </div>
-                
-            <div class="botoes">
-                <input type="button" class="calc" value="CALCULAR" onclick="calcular()">
-                <input type="button" class="limp" value="LIMPAR" onclick="limpar()">
+<!-- Estrutura principal da calculadora -->
+<main>
+
+    <!-- Caixa principal da aplicação -->
+    <section class="tela-calc">
+
+        <!-- Área do título -->
+        <div class="titulo">
+            <h1>Calculadora - IMC</h1>
+        </div>
+
+        <!-- Campo da altura -->
+        <div class="alt-pes">
+
+            <!-- Label associada ao input -->
+            <label for="txtalt">Altura:</label>
+
+            <!-- Container do input + unidade de medida -->
+            <div class="input-medidas">
+
+                <!-- Input numérico da altura -->
+                <input type="number" name="txtalt" id="txtalt" placeholder="Escreva a Altura em Metros (m)">
+                <!-- Unidade de medida -->
+                <span>m</span>
 
             </div>
-            <div id="tela-resultado" class="ocultar-res">
-                <div id="res">
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
 
+        <!-- Campo do peso -->
+        <div class="alt-pes">
+
+            <!-- Label associada ao input -->
+            <label for="txtpeso">Peso:</label>
+
+            <!-- Container do input + unidade -->
+            <div class="input-medidas">
+
+                <!-- Input numérico do peso -->
+                <input type="number" name="txtpeso" id="txtpeso" placeholder="Escreva o Peso em Quilogramas (kg)">
+                <!-- Unidade de medida -->
+                <span>Kg</span>
+
+            </div>
+        </div>
+
+        <!-- Área dos botões -->
+        <div class="botoes">
+
+            <!-- Botão que executa o cálculo do IMC -->
+            <input type="button" class="calc" value="CALCULAR" onclick="calcular()">
+
+            <!-- Botão que limpa os campos -->
+            <input type="button" class="limp" value="LIMPAR" onclick="limpar()">
+
+        </div>
+
+        <!-- Área onde o resultado será exibido -->
+        <!-- Começa escondida -->
+        <div id="tela-resultado" class="ocultar-res">
+
+            <!-- Div onde o JavaScript adiciona o texto do resultado -->
+            <div id="res">
+            </div>
+
+        </div>
+
+    </section>
+</main>
     
     
     <script src="script/script.js"></script>

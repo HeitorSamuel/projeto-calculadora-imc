@@ -1,152 +1,229 @@
- *{
+/* Reset padrão do navegador */
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/* Fundo da página */
 body{
     background-image: linear-gradient(to top, #003049, #CBE2FE);
 }
 
+/* Centraliza a calculadora na tela */
 main{
     height: 100vh;
     width: 100vw;
+
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Caixa principal da calculadora */
 section.tela-calc{
+
     background-color: #003049;
+
     display: flex;
     flex-flow: column nowrap;
+
     justify-content: center;
     align-items: center;
+
     gap: 65px;
+
     padding: 50px;
+
     width: 500px;
+
     border-radius: 10px;
+
     box-shadow: 0px 0px 10px black;
 }
 
+/* Área do título */
 div.titulo{
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
+
     color: #fdf0d5;
+
     font-weight: bold;
 }
 
+/* Tamanho do título */
 div.titulo > h1{
     font-size: 2.5rem;
 }
 
+/* Estrutura dos campos */
 div.alt-pes{
+
     display: flex;
     flex-flow: column nowrap;
+
     width: 450px;
     height: 45px;
-    color: #fdf0d5;
-    justify-content: center;
-    font-size: 1.1rem;
 
+    justify-content: center;
+
+    color: #fdf0d5;
+
+    font-size: 1.1rem;
 }
 
+/* Container do input + unidade */
 div.input-medidas{
+
     display: flex;
+    align-items: center;
+
     gap: 10px;
-    background-color: #669bbc;
+
     width: 100%;
+
     padding: 15px;
-    border-radius: 8px;
+
     margin-top: 5px;
+
+    background-color: #669bbc;
+
+    border-radius: 8px;
+
+    /* Sombra interna */
     box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Input numérico */
 div.input-medidas > input{
+
+    /* Faz o input ocupar o espaço restante */
     flex: 1;
+
     background-color: transparent;
+
     border: none;
+
     color: #fdf0d5;
+
     font-size: 1rem;
 }
 
+/* Cor do placeholder */
 div.input-medidas > input::placeholder{
     color: white;
 }
 
-div.input-medidas > input::-webkit-outer-spin-button, div.input-medidas > input::-webkit-inner-spin-button {
+/* Remove as setinhas do input number */
+div.input-medidas > input::-webkit-outer-spin-button,
+div.input-medidas > input::-webkit-inner-spin-button {
+
     appearance: none;
 }
 
+/* Remove a borda azul ao clicar */
 div.input-medidas > input:focus{
     outline: none;
 }
 
+/* Área dos botões */
 div.botoes{
+
     display: flex;
-    justify-content: space-between;
+
     width: 450px;
+
     gap: 10px;
 }
 
+/* Estilo geral dos botões */
 div.botoes > input{
-    padding: 20px;
+
     width: 270px;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
     font-size: 1rem;
-}
 
-div.botoes > input.calc{
-    background-color: #780000;
-    color: #fdf0d5;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: color 0.8s, background-color 0.8s, box-shadow 0.8s;
-    box-shadow: inset 0px 0px 5px black;
-}
-
-div.botoes > input.calc:hover{
-    background-color: #c1121f;
-    color: white;
-}
-
-
-div.botoes > input.limp{
-    background-color: #4F6D7A;
-    color: #fdf0d5;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    box-shadow: inset 0px 0px 5px black;
-    transition: color 0.8s, background-color 0.8s, box-shadow 0.8s;
-}
-
-div.botoes > input.limp:hover{
-    background-color: #6C93A8;
-    color: white;
-    
-}
-
-div.botoes > input:hover{
     cursor: pointer;
 }
 
+/* Botão calcular */
+div.botoes > input.calc{
 
+    background-color: #780000;
+
+    color: #fdf0d5;
+
+    font-weight: bold;
+
+    box-shadow: inset 0px 0px 5px black;
+
+    transition: 0.8s;
+}
+
+/* Hover do botão calcular */
+div.botoes > input.calc:hover{
+
+    background-color: #c1121f;
+
+    color: white;
+}
+
+/* Botão limpar */
+div.botoes > input.limp{
+
+    background-color: #4F6D7A;
+
+    color: #fdf0d5;
+
+    font-weight: bold;
+
+    box-shadow: inset 0px 0px 5px black;
+
+    transition: 0.8s;
+}
+
+/* Hover do botão limpar */
+div.botoes > input.limp:hover{
+
+    background-color: #6C93A8;
+
+    color: white;
+}
+
+/* Caixa do resultado */
 div#res{
+    
     display: flex;
-    background-color: #669bbc;
-    width: 450px;
-    height: 100px;
-    border-radius: 10px;
+
     justify-content: center;
     align-items: center;
+
+    width: 450px;
+    height: 100px;
+
+    background-color: #669bbc;
+
+    border-radius: 10px;
+
     color: #fdf0d5;
+
     font-size: 1.1rem;
 }
 
+/* Classe usada para esconder o resultado */
 div.ocultar-res{
     display: none;
 }
